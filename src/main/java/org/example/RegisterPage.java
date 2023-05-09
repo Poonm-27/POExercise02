@@ -6,6 +6,9 @@ import org.openqa.selenium.By;
 public class RegisterPage extends Utils {
     private By _firstname = By.xpath("//input[@id='FirstName']");
     private By _lastname =By.xpath("//input[@id='LastName']");
+    private By _day = By.xpath("//select[contains(@name,'DateOfBirthDay')]");
+    private By _month =By.name("DateOfBirthMonth");
+    private By _year = By.name("DateOfBirthYear");
     private By _emailId = By.xpath("//input[@id='Email']");
     private By _password = By.xpath("//input[@id='Password']");
     private By _confirmPassword = By.xpath("//input[@id='ConfirmPassword']");
@@ -18,6 +21,22 @@ public class RegisterPage extends Utils {
 
         //type lastname
         typeText(_lastname,"TestLastName");
+
+        //Select the day of birth
+
+       // selectByDisplayedText(By.name("DateOfBirthDay"),"10");
+        //div.date-picker-wrapper select
+        //selectByDisplayedText(By.xpath("//select[contains(@name,'DateOfBirthDay')]"),"10");
+        selectByDisplayedText(_day,"10");
+
+        //Select the month of birth
+
+        selectByValue(_month,"8");
+
+        //Select the year of birth
+
+        selectByIndexValue(_year,78);
+
 
         //type email address
         typeText(_emailId,"testJava12"+timestamp()+"@gmail.com");
