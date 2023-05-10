@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NewCommentAddedPage extends Utils {
-
     private By _addedComment = By.cssSelector("div.comment");
 
     public void verifyCommentsAddedAtTheEndOfCommentList()

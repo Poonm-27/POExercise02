@@ -23,20 +23,13 @@ public class RegisterPage extends Utils {
         typeText(_lastname,"TestLastName");
 
         //Select the day of birth
-
-       // selectByDisplayedText(By.name("DateOfBirthDay"),"10");
-        //div.date-picker-wrapper select
-        //selectByDisplayedText(By.xpath("//select[contains(@name,'DateOfBirthDay')]"),"10");
         selectByDisplayedText(_day,"10");
 
         //Select the month of birth
-
         selectByValue(_month,"8");
 
         //Select the year of birth
-
         selectByIndexValue(_year,78);
-
 
         //type email address
         typeText(_emailId,"testJava12"+timestamp()+"@gmail.com");

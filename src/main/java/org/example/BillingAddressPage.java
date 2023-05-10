@@ -26,8 +26,5 @@ public class BillingAddressPage extends Utils{
         typeText(_phoneNumber,"9854123456");
         clickOnElement(_continue);
 
-
-
-
     }
 }

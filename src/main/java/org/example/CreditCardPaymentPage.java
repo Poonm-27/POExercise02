@@ -13,21 +13,21 @@ public class CreditCardPaymentPage extends Utils{
     public void enterCreditCardDetails(){
         //select the card type
         selectByValue(_creditCardType,"visa");
+
         //Enter cardholder name
         typeText(_cardholderName,"Rita");
+
         //Enter Card Number
         typeText(_cardNumber,"4532406670886405");
+
         //Select expiry month
         selectByIndexValue(_expiryMonth,7);
-        //index 7
 
         //Select expiry year
         selectByValue(_expiryYear,"2029");
-        //value="2029"
 
         //Enter card code
         typeText(_cardCode,"970");
-        //970
 
         //click on continue
         clickOnElement(_continue);
