@@ -19,7 +19,7 @@ public class TestSuite extends BaseTest {
     CommentPageNopCommerceNewRelease commentPageNopCommerceNewRelease = new CommentPageNopCommerceNewRelease();
     NewCommentAddedPage newCommentAddedPage =new NewCommentAddedPage();
     Facebook_NopCommerce_Page facebookNopCommercePage=new Facebook_NopCommerce_Page();
-    SwitchMainProgram switchMainProgram = new SwitchMainProgram();
+    //SwitchMainProgram switchMainProgram = new SwitchMainProgram();
     CheckOutAsGuestPage checkOutAsGuestPage =new CheckOutAsGuestPage();
     BillingAddressPage billingAddressPage = new BillingAddressPage();
     ShippingMethodPage shippingMethodPage =new ShippingMethodPage();
@@ -207,6 +207,8 @@ public class TestSuite extends BaseTest {
     }
 
     @Test
+
+    //verify user should be able to get alert popup message when search button is clicked
     public void verifyUserAbleToAcceptOrClickOkWhenAlertMsgOccurs(){
         homePage.verifyAlertIsPopUpWhileClickingSearchButton();
     }
@@ -249,6 +251,8 @@ public class TestSuite extends BaseTest {
 
     @Test
 
+    /*Verify user is able to navigate to multiple windows and return back to
+     main window(handle multiple windows)*/
     public void verifyUserShouldAbleToHandleMultipleWindows() {
 
         //click on facebook icon on homepage
@@ -263,6 +267,7 @@ public class TestSuite extends BaseTest {
 
     @Test
 
+    //Verify Guest user should be able to check out successfully
     public void guestUserShouldAbleToCheckOutSuccessfully() throws InterruptedException {
         //click Add to cart button of Build your own computer
         homePage.clickOnAddToCart_BuildYourOwnComputer();
@@ -307,7 +312,11 @@ public class TestSuite extends BaseTest {
     }
 
     @Test
+
+    //Verify Alert popup when vote is clicked without selecting any option
+
     public void verifyUserClickOnVoteAndGetAlert(){
+
         //click on vote & accept Alert message
         homePage.verifyUserClickOnVoteAndAcceptAlert();
     }

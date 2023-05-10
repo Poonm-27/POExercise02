@@ -14,3 +14,4 @@ public class PaymentMethodPage extends Utils{
         clickOnElement(_clickContinue);
     }
 }
+
